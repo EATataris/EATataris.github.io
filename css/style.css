@@ -349,7 +349,8 @@
 }
 
 .form {
-    width: 287px;
+    width: 363px;
+    box-sizing: border-box;
     padding: 25px 38px;
     margin-bottom: 43px;
     background-color: rgba(238, 242, 245, 0.8);
@@ -360,7 +361,7 @@
 
 
 .form-title {
-    width: 172px;
+    width: 100%;
     margin: 0 auto 20px auto;
     color: #000000;
     font-family: "Exo 2.0";
@@ -770,8 +771,15 @@
         display: none;
     }
     
+    form {
+        display: block;
+        width: 100%;
+    }
+    
     .form {
-        position: inherit;
+        position: static;
         margin: 10px auto 0;
+        width: 100%;
+        max-width: 363px;
     }
 }
